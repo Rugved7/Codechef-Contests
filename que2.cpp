@@ -1,35 +1,26 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
+int main() {
+	// your code goes here
 
     int T;
-    cin >> T;
+    cin>>T;
+    int A,B,C;
 
-    for (int i = 0; i < T; i++)
+    for (int  i = 0; i < T; i++)
     {
-        int A, B, C, D;
-        cin >> A >> B >> C >> D;
+       cin>>A>>B>>C;
+       cout<<endl;
 
-        cout << endl;
-
-        int x, y;
-        x = A - C;
-        y = B - D;
-
-        if (x < y)
-        {
-            cout << "First" << endl;
-        }
-        else if (x == y)
-        {
-            cout << "Any" << endl;
-        }
-
-        else
-            cout << "Second" << endl;
+       if (B>=A && B>=C)
+       {
+        cout<<"Yes"<<endl;
+       }
+      else{
+        cout<<"No"<<endl;
+      } 
     }
-    // your code goes here
-    return 0;
+    
+	return 0;
 }
