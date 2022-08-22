@@ -1,27 +1,25 @@
-#include<iostream>
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
-int main(){
-    int T;
-    cin>>T;
-for (int  i = 0; i < T; i++)
+int main()
 {
-    int N;
-    cin>>N;
-    int S;
-    for (int  i = 0; i < N; i++)
-    {
-      cin>>S;
-
-      int V;
-      V=N;
-      cin>>V;
-cout<< std::min(S,N);
-    }
-}
-
-    
-    
-    return 0;
+	int t;
+	cin >> t;
+	while (t--)
+	{
+		int candies, friends;
+		cin >> candies >> friends;
+		if ((candies % friends) == 0)
+		{
+			if ((candies / friends) % 2 == 0)
+			{
+				cout << "Yes" << endl;
+			}
+			else
+				cout << "No" << endl;
+		}
+		else
+			cout << "No" << endl;
+	}
+	return 0;
 }

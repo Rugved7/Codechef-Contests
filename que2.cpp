@@ -1,26 +1,32 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-	// your code goes here
-
+int main()
+{
     int T;
-    cin>>T;
-    int A,B,C;
+    cin >> T;
 
-    for (int  i = 0; i < T; i++)
+    int A, B, C;
+    for (int i = 0; i < T; i++)
     {
-       cin>>A>>B>>C;
-       cout<<endl;
-
-       if (B>=A && B>=C)
-       {
-        cout<<"Yes"<<endl;
-       }
-      else{
-        cout<<"No"<<endl;
-      } 
+        cin >> A >> B >> C;
+        if ((A + B) / 2 < 35)
+        {
+            cout << "FAIL" << endl;
+        }
+        else if ((B + C) / 2 < 35)
+        {
+            cout << "FAIL" << endl;
+        }
+        else if ((A + C) / 2 < 35)
+        {
+            cout << "FAIL" << endl;
+        }
+        else
+        {
+            cout << "PASS" << endl;
+            ;
+        }
     }
-    
-	return 0;
+    return 0;
 }
